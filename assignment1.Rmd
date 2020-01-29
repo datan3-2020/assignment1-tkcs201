@@ -7,6 +7,8 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
 ```
 
 ## Open data (10 points)
@@ -15,7 +17,6 @@ In this assignment you will work with the individual level data from wave 8 of t
 
 ```{r}
 library(tidyverse)
-getwd()
 Data <- read_tsv("/Users/TheaSmith/Desktop/Data Analysis III/assignment1-tkcs201/UKDA-6614-tab/tab/ukhls_w8/h_indresp.tab")
 ```
 
